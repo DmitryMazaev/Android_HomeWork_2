@@ -8,7 +8,10 @@ import com.example.android_homework_2.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        val newString: String = "Измененная верхняя строка"
         val binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        binding.postView.upString(newString)
     }
+
 }
